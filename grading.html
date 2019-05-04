@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>輔仁大學專題評分管理系統</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">FJU Seminar Grading & Management System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="functionregion.html">功能區<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="height: 600px;">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p style="margin-top: 30px"class="lead">功能表</p>
+                <div class="list-group">
+                    <a href="viewmembers.html" target="edit" class="list-group-item" style="color: #212529">檢視專題成員</a>
+					<a href="grading.html" class="list-group-item"
+                    style="color: #212529">線上評分</a>
+                    
+                </div>
+            </div>
+        <!-- Function Content -->
+        
+<div class="col-md-9" style="top: 50px">
+                <div class="thumbnail" style="margin: 40px; ">                    
+                    <div class="caption-full">                        
+                        <h4><font color=brown>線上評分</font></h4>
+                    </div>				
+
+
+             <form  method=post>
+                <table  class="table table-striped">					       
+					       <tr class=success>
+						       <td colspan=7 style="font-size: x-large;">請選擇專題組別<div class="dropdown" style="float: right">
+                                                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                點擊下拉取得組別
+                                                              </button>
+                                                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">YOLO X 憂樂日記</a>
+                                                                <a class="dropdown-item" href="#">WannaRich 智慧型金融理財機器人</a>
+                                                                <a class="dropdown-item" href="#">基於影像辨識的自走車應用系統</a>
+                                                              </div>
+                                                            </div></td>
+						   </tr>					       
+					       <tr>
+							 <td  rowspan="2" style="vertical-align: middle">文件初稿 30%</td>
+							 <td>系統描述</td>
+							 <td>需求規格</td>
+							 <td>設計規格</td>
+                             <td></td>
+                             <td></td>
+							</tr>
+                           <tr>
+                               <td><select name="sysdescribe">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                               <td><select name="requirespec">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="designspec">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td></td>
+                                <td></td>
+                           </tr>
+							<tr>
+							 <td rowspan="2" style="vertical-align: middle">系統功能 30%</td>
+							 <td>功能創新性</td>
+							 <td>功能實用性</td>
+							 <td>系統技術性</td>
+							 <td>介面親和性</td>
+							 <td>內容豐富性</td>
+							</tr>
+                           <tr>
+                               <td><select name="functioninnovation">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="functionuseful">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="systemtech">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="uiux">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="richornot">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                           </tr>
+							<tr>
+							 <td rowspan="2" style="vertical-align: middle">系統發表 40%</td>
+							 <td>展示</td>
+							 <td>應對</td>
+							 <td>時間控制</td>
+							 <td>系統功能</td>
+							 <td></td>
+							</tr>
+							<tr>
+                               <td><select name="perform">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="respond">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="timecontroling">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td><select name="sysfun">
+                                     <option value="A">A</option>
+                                     <option value="B">B</option>
+                                     <option value="C">C</option>
+                                     <option value="D">D</option>
+                                     <option value="F">F</option> 
+                                    </select>
+                                </td>
+                                <td></td>
+                                
+                           </tr>								
+							
+					   </table>
+			</form>	
+			<button type="button" style="float: right" class="btn btn-info">儲存</button>				
+   
+                
+                </div>
+
+ </div>
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark" style="position: fixed; bottom: 0; width: 100%;">
+      <div class="container">
+        <p class="m-0 text-center text-white">Made by the Coolest in IM 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
